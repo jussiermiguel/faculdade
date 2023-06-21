@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.n{
+    position: absolute;
+    top: 4.6%;
+    width: 100%;
+    z-index: 2;    
+}
+
+
+.ni{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mn{
+    color: #fff;
+  /*  display: none; */
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: #000;
+    opacity: 0.9;
+}
+
+.mn .mnul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3%;
+    border: 2px solid #fff;
+    border-radius: 7px;
+    background-color: #c18f59;
+}
+
+.mn .mnul li{
+    background-color: #000;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.mn .mnul a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mn .mnul a:hover{
+    color: #777;
+}
+
+.bcontainer{
+    cursor: pointer;
+    z-index: 3;
+}
+
+.b1, .b2, .b3{
+    width: 30px;
+    height: 3px;
+    background-color: #c18f59;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .b1{
+    transform: rotate(-45deg) translate(-6pc, 6px);
+    background-color: #c18f59;
+}
+
+.change .b2{
+    opacity: 0;
+    background-color: #c18f59;
+}
+
+.change .b3{
+    transform: rotate(45deg) translate(-6pc, -7px);
+    background-color: #c18f59;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML CSS JS</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+
+    <body>
+
+        <nav>
+            <div class="n">
+                <div class="ni">
+                    <img id="logo">
+                    <div class="mn">
+                        <ul class="mnul">
+                            <li><a href="">1</a></li>
+                            <li><a href="">2</a></li>      
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>                    
+                        </ul>
+                    </div>
+                </div>
+                <div id="bb" class="bcontainer" onclick="menuFn(this)">
+                    <div class="b1"></div>
+                    <div class="b2"></div>
+                    <div class="b3"></div>
+                </div>
+                <script>
+                    function menuFn(x){
+                        x.classList.toggle("change")
+                    }
+                </script>
+            </div>
+        </nav>
+
+    </body>
+</html>
