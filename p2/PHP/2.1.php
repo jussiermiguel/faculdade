@@ -1,0 +1,4 @@
+<?php
+    // corpo do script
+   
+?>
