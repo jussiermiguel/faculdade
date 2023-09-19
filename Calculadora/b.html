@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="b.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <div class="resultado">
+            <input type="text" id="display" value="0" readonly>
+        </div>
+        <div class="btns">
+            <button onclick="limparDisplay()">C</button>
+            <button onclick="inverterSinal()">±</button>
+            <button onclick="calcularPorcentagem()">%</button>
+            <button onclick="adicionarOperador('/')">÷</button>
+
+            <button onclick="adicionarNumero(1)">1</button>
+            <button onclick="adicionarNumero(2)">2</button>
+            <button onclick="adicionarNumero(3)">3</button>
+            <button onclick="adicionarOperador('*')">x</button>
+
+            <button onclick="adicionarNumero(4)">4</button>
+            <button onclick="adicionarNumero(5)">5</button>
+            <button onclick="adicionarNumero(6)">6</button>
+            <button onclick="adicionarOperador('-')">-</button>
+
+            <button onclick="adicionarNumero(7)">7</button>
+            <button onclick="adicionarNumero(8)">8</button>
+            <button onclick="adicionarNumero(9)">9</button>
+            <button onclick="adicionarOperador('+')">+</button>
+
+            <button onclick="adicionarNumero(0)">0</button>
+            <button onclick="adicionarDecimal()">,</button>
+            <button onclick="calcularResultado()">=</button>
+        </div>
+    </div>
+    
+    <script src="b.js"></script>
+</body>
+</html>
