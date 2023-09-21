@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Tarefas</title>
+    <style>
+        #taskList {
+            width: 300px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    <div id="taskList">
+        <input type="text" id="taskInput" placeholder="Digite uma tarefa">
+        <button onclick="addTask()">Adicionar Tarefa</button>
+        <ul id="tasks"></ul>
+    </div>
+
+    <script>
+        function addTask() {
+            // Obter o valor do campo de entrada de texto
+            var taskText = document.getElementById("taskInput").value;
+
+            // Verificar se o campo está vazio
+            if (taskText === "") {
+                alert("Por favor, digite uma tarefa.");
+                return;
+            }
+
+            // Criar um novo elemento de lista
+            var taskItem = document.createElement("li");
+
+            // Definir o texto do elemento de lista como a tarefa
+            taskItem.textContent = taskText;
+
+            // Adicionar a tarefa à lista de tarefas
+            document.getElementById("tasks").appendChild(taskItem);
+
+            // Limpar o campo de entrada de texto
+            document.getElementById("taskInput").value = "";
+        }
+    </script>
+</body>
+</html>
